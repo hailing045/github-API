@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
   <head>
-    <title>
-      Github Access
-    </title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, inital-scale=1.0">
+    <title>Github Search user</title>
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
 
 <body>
-    <div>
-      <div>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="container">
+        <br>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <h1 style = "text-align:center;">Github Search</h1>
+          <form id="myForm" autocomplete="off">
+            <div class = "form-group">
+              Search for a user: <input type="text" class="form-control" id="search"  placeholder="username" required>
+            </div>
 
-          <form id="inputForm" action="startSearch()">
-              Search for a user: <input type="text" id="userName" name="userName" placeholder="username">
               <br>
-              Enter access token:<input type="text"  id="authToken" placeholder="if applicable" name="authToken">
-              <button type="submit"><i class="fa fa-search"></i></button>
+            <!-- <div class = "form-group">
+              Enter access token:<input type="text" class="form-control"  id="authToken" placeholder="if applicable" name="authToken">
+            </div> -->
+            <br>
+            <div class = "form-group">
+              <button class="btn btn-danger btn-block">Search User</button>
+            </div>
           </form>
-      </div>
+          <div id = "result"></div>
     </div>
-</body>
 
+</body>
+  <script src = "script.js"></script>
 </html>
