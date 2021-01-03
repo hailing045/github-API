@@ -5,29 +5,33 @@
     <meta name = "viewport" content = "width=device-width, inital-scale=1.0">
     <title>Github Search user</title>
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</head>
 
 <body>
-    <div class="container">
-        <br>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <h1 style = "text-align:center;">Github Search</h1>
-          <form id="myForm" autocomplete="off">
-            <div class = "form-group">
-              Search for a user: <input type="text" class="form-control" id="search"  placeholder="username" required>
-            </div>
+  <div class="container">
+    <div class="container-fluid" class="row" class="mb-2 mt-2 col-md-12">
+      <br>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <h1 style = "text-align:center;">Github Search</h1>
+        <form id="myForm" action="startSearch()">
+          <div class = "form-group">
+            Search for a user: <input type="text" class="form-control" id="search"  placeholder="username" required>
+          </div>
 
-              <br>
-            <div class = "form-group">
-              Enter access token:<input type="text" class="form-control"  id="authToken" placeholder="if applicable" name="authToken">
-            </div>
             <br>
-            <div class = "form-group">
-              <button class="btn btn-danger btn-block">Search User</button>
-            </div>
-          </form>
-          <div id = "result"></div>
-    </div>
+          <div class = "form-group">
+            Enter access token:<input type="text" class="form-control"  id="authToken" placeholder="if applicable" name="authToken">
+          </div>
+          <br>
+          <div class = "form-group">
+            <button onclick="handleInput()" class="btn btn-danger btn-block">Search User</button>
+          </div>
+        </form>
+        <div id = "result"></div>
+      </div>
+<br><br>
+
 
 </body>
   <script src = "script.js"></script>
