@@ -39,3 +39,11 @@ form.addEventListener('submit',function(e){
     `
   })
 })
+
+
+function handleInput() {
+    var user = document.getElementById("search").value;
+    var token = document.getElementById("authToken").value;
+        if (languageChart != null) languageChart;
+    main(user, token);
+}
