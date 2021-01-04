@@ -41,8 +41,8 @@ form.addEventListener('submit',function(e){
       .then((dataF) =>{
         console.log(dataF)
         var first = dataF[0];
-        var firstName = first.login;
         if(first!=null){
+            var firstName = first.login;
             document.getElementById("resultF").innerHTML = `
             <div>
                 <!-- <h6>First github user he/she follows:</h6> -->
@@ -70,8 +70,8 @@ form.addEventListener('submit',function(e){
               .then((dataFF) =>{
                 console.log(dataFF)
                 var firstF = dataFF[0];
-                var firstFName = firstF.login;
                 if(firstF!=null){
+                    var firstFName = firstF.login;
                     document.getElementById("resultFF").innerHTML = `
 
                     <div>
@@ -92,22 +92,23 @@ form.addEventListener('submit',function(e){
 })
 
 
-function handleInput() {
+function handleInput(input) {
     var user = document.getElementById("search").value;
     var token = document.getElementById("authToken").value;
         if (languageChart != null) languageChart;
         if (hourCommitChart != null) hourCommitChart;
-    main(user, token);
+        chartType = (input==2) ?    'doughnut':'line';
+    main(user, token,chartType);
 }
 
-async function main(user, token) {
+async function main(user, token,chartType) {
     var url = `https://api.github.com/users/${user}/repos`;
     var repo = await getRequest(url, token).catch(error => console.error(error));
 
     url = `https://api.github.com/users/${user}`;
     var user_info = await getRequest(url, token).catch(error => console.error(error));
 
-    get_language_pie(repo, user, token);
+    get_language_pie(repo, user, token, chartType);
     get_commits_times(repo, user, token);
 }
 
@@ -125,7 +126,8 @@ async function getRequest(url, token) {
     return data;
 }
 
-async function get_language_pie(repo, user, token) {
+
+async function get_language_pie(repo, user, token, chartType) {
     let data = [];
     let label = [];
     for (i in repo) {
@@ -142,10 +144,9 @@ async function get_language_pie(repo, user, token) {
             }
         }
     }
-    draw('language', 'doughnut', label,data);
+    draw('language', chartType, label,data);
 
 }
-
 
 function draw(ctx, chartType, label,data) {
 
@@ -269,17 +270,11 @@ function drawHour(ctx, label, data) {
     });
 }
 
-
+async function toggleChart() {
+  // languageChart.destroy;
+  var statue = 2;
+  handleInput(statue);
+}
 
 var languageChart = null;
 var hourCommitChart = null;
-
-draw();
-function toggleChart() {
-  //destroy chart:
-  myBarChart.destroy();
-  //change chart type:
-  this.chartType = (this.chartType == 'doughnut') ? 'line' : 'doughnut';
-  //restart chart:
-  draw();
-}
