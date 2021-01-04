@@ -28,15 +28,8 @@ form.addEventListener('submit',function(e){
         Date become a Github user: <i>${data.created_at}</i>
         <br>
         No. Repositories: <i>${data.public_repos}</i>
-        <!-- <br><br>
-        first one he follows
-        <br><br>
-        <a target ="_blank" href = "https://api.github.com/users/${oName}/followers">
-         <img src = "${data.avatar_url}" width="100" height="100"/>
-        </a> -->
       </div>
       </body>
-<br><br><br><br><br><br><br><br>
     `
   })
 
@@ -47,13 +40,13 @@ form.addEventListener('submit',function(e){
       .then((dataF) =>{
         console.log(dataF)
         var first = dataF[0];
+        var firstName = first.login;
         if(first!=null){
-            document.getElementById("result").innerHTML = `
-
-            <br><br><br><br><br><br><br><br>
-                first one he follows
+            document.getElementById("resultF").innerHTML = `
+            <div>
+                First github user he/she follows:
                 <br><br>
-                <a target ="_blank" href = "https://api.github.com/users/${oName}/followers">
+                <a target ="_blank" href = "https://github.com/${firstName}">
                  <img src = "${first.avatar_url}" width="100" height="100"/>
                 </a>
               </div>
@@ -62,7 +55,7 @@ form.addEventListener('submit',function(e){
             `
           }
           else{
-          
+
           }
 
         })
