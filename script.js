@@ -45,6 +45,7 @@ function handleInput() {
     var user = document.getElementById("search").value;
     var token = document.getElementById("authToken").value;
         if (languageChart != null) languageChart;
+        if (hourCommitChart != null) hourCommitChart;
     main(user, token);
 }
 
@@ -56,6 +57,7 @@ async function main(user, token) {
     var user_info = await getRequest(url, token).catch(error => console.error(error));
 
     get_language_pie(repo, user, token);
+    get_commits_times(repo, user, token);
 }
 
 async function getRequest(url, token) {
@@ -90,6 +92,7 @@ async function get_language_pie(repo, user, token) {
         }
     }
     draw('language', label,data);
+
 }
 
 
@@ -159,4 +162,63 @@ function draw(ctx, label,data) {
         },
     });
 }
+
+async function get_commits_times(repo, user, token) {
+    let label = [];
+    let data = [];
+    let backgroundColor = [];
+    var hours = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10','11', '12', '13', '14', '15', '16', '17', '18', '19', '20','21', '22', '23', '24' ];
+
+    for (i in repo) {
+        let url = `https://api.github.com/repos/${user}/${repo[i].name}/commits?per_page=100`;
+        let commits = await getRequest(url, token).catch(error => console.error(error));
+
+        for (j in commits) {
+            let date = commits[j].commit.committer.date;
+
+            var h = new Date(date);
+            let hour = hours[h.getHours()];
+
+            if (label.includes(hour)) {
+                for (i = 0; i < label.length; i++)
+                    if (hour == label[i])
+                        data[i] += 1;
+
+            } else {
+                label.push(hour);
+                data.push(1);
+                backgroundColor.push(`rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.2)`);
+            }
+        }
+
+    }
+
+    drawHour('commits', 'commits',  label, data);
+}
+
+
+function drawHour(ctx, label, data) {
+
+    let myChart = document.getElementById(ctx).getContext('2d');
+
+    hourCommitChart = new Chart(myChart, {
+        type: 'line',
+        data: {
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10','11', '12', '13', '14', '15', '16', '17', '18', '19', '20','21', '22', '23', '24' ],
+            datasets: [{
+                data: data,
+                label:"commits frequency in this hour",
+                borderWidth: 1,
+                hoverBorderWidth: 2,
+
+                borderColor: 'rgba(54, 162, 235, 1)',
+                hoverBorderColor: 'rgba(45, 99, 102, 0.2)'
+            }],
+        },
+    });
+}
+
+
+
 var languageChart = null;
+var hourCommitChart = null;
