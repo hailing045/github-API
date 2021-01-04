@@ -24,9 +24,9 @@ form.addEventListener('submit',function(e){
         <br>
         Following: <i>${data.following==0?"He/She is not following anyone":data.following}</i>
         <br>
-        Followrs: <i>${data.followers==0?"Nobody is following him/her, click on the profile image to follow👆":data.followers}</i>
+        Followers: <i>${data.followers==0?"Nobody is following him/her, click on the profile image to follow👆":data.followers}</i>
         <br>
-        Date become a Github user: <i>${data.created_at}</i>
+        Date became a Github user: <i>${data.created_at}</i>
         <br>
         No. Repositories: <i>${data.public_repos}</i>
       </div>
@@ -46,7 +46,7 @@ form.addEventListener('submit',function(e){
             document.getElementById("resultF").innerHTML = `
             <div>
                 <!-- <h6>First github user he/she follows:</h6> -->
-                First github user he/she follows:
+                First github user following him/her:
                 <a target ="_blank" href = "https://github.com/${firstName}">
                  <img src = "${first.avatar_url}" width="100" height="100"/>
                 </a>
@@ -75,7 +75,7 @@ form.addEventListener('submit',function(e){
                     document.getElementById("resultFF").innerHTML = `
 
                     <div>
-                        First github user following him/her:
+                        First github user he/she follows:
                         <a target ="_blank" href = "https://github.com/${firstFName}">
                          <img src = "${firstF.avatar_url}" width="100" height="100"/>
                         </a>
