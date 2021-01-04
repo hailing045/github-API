@@ -8,9 +8,6 @@ form.addEventListener('submit',function(e){
   var oName = search.split(' ').join('')
   document.getElementById("result").innerHTML =""
 
-
-
-
   fetch("https://api.github.com/users/" + oName)
   .then((result) => result.json())
   .then((data) =>{
@@ -31,13 +28,45 @@ form.addEventListener('submit',function(e){
         Date become a Github user: <i>${data.created_at}</i>
         <br>
         No. Repositories: <i>${data.public_repos}</i>
-
-
+        <!-- <br><br>
+        first one he follows
+        <br><br>
+        <a target ="_blank" href = "https://api.github.com/users/${oName}/followers">
+         <img src = "${data.avatar_url}" width="100" height="100"/>
+        </a> -->
       </div>
       </body>
-
+<br><br><br><br><br><br><br><br>
     `
   })
+
+
+
+    fetch("https://api.github.com/users/" + oName + "/followers")
+      .then((result1) => result1.json())
+      .then((dataF) =>{
+        console.log(dataF)
+        var first = dataF[0];
+        if(first!=null){
+            document.getElementById("result").innerHTML = `
+
+            <br><br><br><br><br><br><br><br>
+                first one he follows
+                <br><br>
+                <a target ="_blank" href = "https://api.github.com/users/${oName}/followers">
+                 <img src = "${first.avatar_url}" width="100" height="100"/>
+                </a>
+              </div>
+              </body>
+
+            `
+          }
+          else{
+          
+          }
+
+        })
+
 })
 
 
