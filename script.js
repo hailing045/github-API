@@ -18,6 +18,7 @@ form.addEventListener('submit',function(e){
        <img src = "${data.avatar_url}" width="200" height="200"/>
       </a>
       <div href = "https://github.com/${oName}">
+      <br>
         <h3>${oName} User Profile</h3>
         Bio: <i>${data.bio==null?"He/She hasn't say anything":data.bio}</i>
         <br>
@@ -29,7 +30,7 @@ form.addEventListener('submit',function(e){
         <br>
         No. Repositories: <i>${data.public_repos}</i>
       </div>
-      </body>
+      <!-- </body> -->
     `
   })
 
@@ -44,13 +45,13 @@ form.addEventListener('submit',function(e){
         if(first!=null){
             document.getElementById("resultF").innerHTML = `
             <div>
+                <!-- <h6>First github user he/she follows:</h6> -->
                 First github user he/she follows:
-                <br><br>
                 <a target ="_blank" href = "https://github.com/${firstName}">
                  <img src = "${first.avatar_url}" width="100" height="100"/>
                 </a>
               </div>
-              </body>
+              <!-- </body> -->
 
             `
           }
