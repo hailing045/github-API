@@ -1,5 +1,5 @@
 # github-API
-
+![alt tag](https://github.com/hailing045/github-API/blob/main/pics/1.png)
 Github accessing part <br />
 Interrogate the GitHub API to retrieve and display data regarding the logged in developer.<br />
 From code access.py, i retrieve and display my own repo data which contains all my repositories and related last commit id. 
