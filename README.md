@@ -56,8 +56,11 @@ The third part is a diagram that commits frequency related to the hour in the da
 <br /><br /><br />
 # github-API full demo:
 here are three demos, with different typical users' usage, please click on the link to view
+<br />
 https://github.com/hailing045/github-API/blob/main/pics/demoL.mov
+<br /><br />
 https://github.com/hailing045/github-API/blob/main/pics/demoM.mov
+<br /><br />
 https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
 
 
