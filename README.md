@@ -15,9 +15,9 @@ For running the code you will need to sub in an github access token where writte
 Interrogate the GitHub API to build visualisation of data available tht elucidates some aspect of the softare engineering process, such as a social graph of developers and projects, or a visualisation of indiviudal of team performance.
 
 <br />
-In this part of the assignment, I let the user enter a GitHub user name with a token and retrieve the data of that user. 
+In this part of the assignment, I let the viewer enter a GitHub user name with a token and retrieve the data of that user. When the viewer enter space in the user name like following image, it get rid of the space and search the user.
 
-<img src ="https://github.com/hailing045/github-API/blob/main/pics/Screenshot%202021-01-04%20at%2015.16.17.png" width = "400">
+<img src ="https://github.com/hailing045/github-API/blob/main/pics/Screenshot%202021-01-04%20at%2015.16.17.png" width = "500">
 The first part brings the profile of the user with bio, no. of following and followers, date become a GitHub user, and no. of repositories. The user avatar is linking to the main page so if the user doesn’t have followers we recommend the viewer follow the user if they want instead of just showing 0. 
 <br />
 
@@ -55,4 +55,9 @@ The third part is a diagram that commits frequency related to the hour in the da
 
 <br /><br /><br />
 # github-API full demo:
+here are three demos, with different typical users' usage, please click on the link to view
+https://github.com/hailing045/github-API/blob/main/pics/demoL.mov
+https://github.com/hailing045/github-API/blob/main/pics/demoM.mov
+https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
+
 
