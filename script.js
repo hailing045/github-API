@@ -75,7 +75,7 @@ form.addEventListener('submit',function(e){
                     document.getElementById("resultFF").innerHTML = `
 
                     <div>
-                        First github user he/she follows:
+                        First github user following him/her:
                         <a target ="_blank" href = "https://github.com/${firstFName}">
                          <img src = "${firstF.avatar_url}" width="100" height="100"/>
                         </a>
@@ -142,17 +142,17 @@ async function get_language_pie(repo, user, token) {
             }
         }
     }
-    draw('language', label,data);
+    draw('language', 'doughnut', label,data);
 
 }
 
 
-function draw(ctx, label,data) {
+function draw(ctx, chartType, label,data) {
 
     let myChart = document.getElementById(ctx).getContext('2d');
 
     languageChart = new Chart(myChart, {
-        type: 'doughnut',
+        type: chartType,
         data: {
             labels: label,
             datasets: [{
@@ -273,3 +273,13 @@ function drawHour(ctx, label, data) {
 
 var languageChart = null;
 var hourCommitChart = null;
+
+draw();
+function toggleChart() {
+  //destroy chart:
+  myBarChart.destroy();
+  //change chart type:
+  this.chartType = (this.chartType == 'doughnut') ? 'line' : 'doughnut';
+  //restart chart:
+  draw();
+}
