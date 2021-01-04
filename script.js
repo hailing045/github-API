@@ -158,6 +158,7 @@ function draw(ctx, chartType, label,data) {
             labels: label,
             datasets: [{
                 data: data,
+                label:"languages",
                 backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
