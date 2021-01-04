@@ -97,7 +97,7 @@ function handleInput(input) {
     var token = document.getElementById("authToken").value;
         if (languageChart != null) languageChart;
         if (hourCommitChart != null) hourCommitChart;
-        chartType = (input==2) ?    'doughnut':'line';
+        chartType = (input==2) ?    'doughnut':'bar';
     main(user, token,chartType);
 }
 
@@ -267,6 +267,31 @@ function drawHour(ctx, label, data) {
                 borderColor: 'rgba(54, 162, 235, 1)',
                 hoverBorderColor: 'rgba(45, 99, 102, 0.2)'
             }],
+            options: {
+                  responsive: true,
+                  scales: {
+                    xAxes: [ {
+                      type: 'time',
+                      display: true,
+                      scaleLabel: {
+                        display: true,
+                        labelString: 'Hour'
+                      },
+                      ticks: {
+                        major: {
+                          fontStyle: 'bold',
+                          fontColor: '#FF0000'
+                        }
+                      }
+                    } ],
+                    yAxes: [ {
+                      display: true,
+                      scaleLabel: {
+                        display: true,
+                        labelString: 'Frequency'
+                      }
+                    } ]
+                  }}
         },
     });
 }
