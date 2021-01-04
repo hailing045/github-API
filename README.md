@@ -26,8 +26,8 @@ The first part brings the profile of the user with bio, no. of following and fol
 <br />
 It also returns the first GitHub user that the searched user follows and the first user that follows them. But if they have none then just don’t show anything. The first follower and first following are also clickable so it let the viewer knows the social graph of this developer. 
 <br />
-
-
+<br />
+To run this code, download the files and run loadPage or mainPage.html
 <img src = "https://github.com/hailing045/github-API/blob/main/pics/1.png" width = "500">
 
 
