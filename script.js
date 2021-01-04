@@ -50,6 +50,7 @@ form.addEventListener('submit',function(e){
                 <a target ="_blank" href = "https://github.com/${firstName}">
                  <img src = "${first.avatar_url}" width="100" height="100"/>
                 </a>
+                 (Click avatar to view)
               </div>
               <!-- </body> -->
 
@@ -61,6 +62,33 @@ form.addEventListener('submit',function(e){
 
         })
 
+
+
+
+            fetch("https://api.github.com/users/" + oName + "/following")
+              .then((result2) => result2.json())
+              .then((dataFF) =>{
+                console.log(dataFF)
+                var firstF = dataFF[0];
+                var firstFName = firstF.login;
+                if(firstF!=null){
+                    document.getElementById("resultFF").innerHTML = `
+
+                    <div>
+                        First github user he/she follows:
+                        <a target ="_blank" href = "https://github.com/${firstFName}">
+                         <img src = "${firstF.avatar_url}" width="100" height="100"/>
+                        </a>
+                        (Click avatar to view)
+                      </div>
+
+                    `
+                  }
+                  else{
+
+                  }
+
+                })
 })
 
 
