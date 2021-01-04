@@ -18,11 +18,11 @@ Interrogate the GitHub API to build visualisation of data available tht elucidat
 In this part of the assignment, I let the user enter a GitHub user name with a token and retrieve the data of that user. 
 The first part brings the profile of the user with bio, no. of following and followers, date become a GitHub user, and no. of repositories. The user avatar is linking to the main page so if the user doesn’t have followers we recommend the viewer follow the user if they want instead of just showing 0. 
 <br />
-![ScreenShot](/pics/2.png)
+![alt tag](/pics/2.png)
 <br />
 It also returns the first GitHub user that the searched user follows and the first user that follows them. But if they have none then just don’t show anything. The first follower and first following are also clickable so it let the viewer knows the social graph of this developer. 
 <br />
-![alt text](https://github.com/hailing045/github-API/blob/main/pics/1.png)
+![alt tag](https://github.com/hailing045/github-API/blob/main/pics/1.png)
 <br />
 The second part is a diagram that lets the viewer know the language this searched user prefers to use. In the beginning, it’s a bar chart to easily see which language they use the most. But to compare between different languages it’s easier to use the pie chart. Thus I have a button that lets the viewer click to see the data showing in the pie chart. It uses chart js and the labels are clickable. Once the viewer clicks the label, the content of this label will be zero. It’s useful to see the second-most used language, third-most used language, etc. 
 <br />
