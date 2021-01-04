@@ -16,6 +16,8 @@ Interrogate the GitHub API to build visualisation of data available tht elucidat
 
 <br />
 In this part of the assignment, I let the user enter a GitHub user name with a token and retrieve the data of that user. 
+
+<img src ="https://github.com/hailing045/github-API/blob/main/pics/Screenshot%202021-01-04%20at%2015.16.17.png" width = "400">
 The first part brings the profile of the user with bio, no. of following and followers, date become a GitHub user, and no. of repositories. The user avatar is linking to the main page so if the user doesn’t have followers we recommend the viewer follow the user if they want instead of just showing 0. 
 <br />
 
