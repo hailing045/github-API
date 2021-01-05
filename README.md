@@ -88,3 +88,6 @@ demo with medium size of languages used and has people following him & he follow
 # github-API run instruction:
 
 To run this code, download the files and run loadPage.html or mainPage.html in web browser
+or 
+run directly from this link https://raw.githack.com/hailing045/github-API/main/loadPage.html
+
