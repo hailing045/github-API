@@ -94,6 +94,7 @@ form.addEventListener('submit',function(e){
 
 function handleInput(input) {
     var user = document.getElementById("search").value;
+    user = user.replace(/\s/g, '');
     var token = document.getElementById("authToken").value;
         if (languageChart != null) languageChart;
         if (hourCommitChart != null) hourCommitChart;
