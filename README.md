@@ -11,7 +11,11 @@ For running the code you will need to sub in an github access token where writte
 <br />
 <br />
 <br />
+
+
 # Github visualisation - Github search
+
+
 <br />
 Interrogate the GitHub API to build visualisation of data available tht elucidates some aspect of the softare engineering process, such as a social graph of developers and projects, or a visualisation of indiviudal of team performance.
 
@@ -59,7 +63,11 @@ The third part is a diagram that commits frequency related to the hour in the da
 
 
 <br /><br /><br />
+
+
 # github-API full demo:
+
+
 here are three demos, with different typical usage users, please click on the link to view
 <br />
 demo with lots of lanaguges used and has people following him & he follows others
@@ -76,5 +84,7 @@ demo with medium size of languages used and has people following him & he follow
 <br />
 <br />
 
+
 # github-API run instruction:
+
 To run this code, download the files and run loadPage.html or mainPage.html in web browser
