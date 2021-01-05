@@ -86,5 +86,5 @@ https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
 <br />
 <br />
 
-<br/>[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+<br/>[![demo](https://img.youtube.com/vi/EpLVqUGLerE-Y/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
 
