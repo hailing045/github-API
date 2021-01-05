@@ -12,26 +12,27 @@ For running the code you will need to sub in an github access token where writte
 <br />
 <br />
 # Github visualisation - Github search
+<br />
 Interrogate the GitHub API to build visualisation of data available tht elucidates some aspect of the softare engineering process, such as a social graph of developers and projects, or a visualisation of indiviudal of team performance.
 
 <br />
-In this part of the assignment, I let the viewer enter a GitHub user name with a token and retrieve the data of that user. 
-If the viewer enter an empty user name and submit it will ask viewer to fill in the username.
+In this part of the assignment, I let the viewer enter a GitHub user name with a token and retrieve the data of that user. <br />
+If the viewer enter an empty user name and submit it will ask viewer to fill in the username.<br />
 <img src ="https://github.com/hailing045/github-API/blob/main/0.png" width = "500">
 <br />
 When the viewer enter space in the user name like following image, it get rid of the space and search the user.
-
-<img src ="https://github.com/hailing045/github-API/blob/main/pics/Screenshot%202021-01-04%20at%2015.16.17.png" width = "500">
+<br />
+<img src ="https://github.com/hailing045/github-API/blob/main/pics/Screenshot%202021-01-04%20at%2015.16.17.png" width = "500"><br />
 The first part brings the profile of the user with bio, no. of following and followers, date become a GitHub user, and no. of repositories. The user avatar is linking to the main page so if the user doesn’t have followers we recommend the viewer follow the user if they want instead of just showing 0. 
 <br />
 
 <img src = "/pics/2.png" width = "500">
 
 <br />
-It also returns the first GitHub user that the searched user follows and the first user that follows them. But if they have none then just don’t show anything. The first follower and first following are also clickable so it let the viewer knows the social graph of this developer. 
+It also returns the first GitHub user that the searched user follows and the first user that follows them. But if they have none then just don’t show anything. The first follower and first following are also clickable. In this part the viewer could knows more about the social graph of this developer they searched. 
 <br />
 <br />
-To run this code, download the files and run loadPage or mainPage.html
+
 <img src = "https://github.com/hailing045/github-API/blob/main/pics/1.png" width = "500">
 
 
@@ -61,17 +62,19 @@ The third part is a diagram that commits frequency related to the hour in the da
 # github-API full demo:
 here are three demos, with different typical usage users, please click on the link to view
 <br />
-
+demo with lots of lanaguges used and has people following him & he follows others
 <br/>[![demo](https://img.youtube.com/vi/p6hNCY9pdS8/0.jpg)](https://www.youtube.com/embed/p6hNCY9pdS8)
 
 
 <br /><br />
-
+demo with medium size of languages used and has people following him & he follows others
 <br/>[![demo](https://img.youtube.com/vi/ItdnHAoi0Y4/0.jpg)](https://www.youtube.com/embed/ItdnHAoi0Y4)
 
-<br /><br />
+<br /><br />demo with small size of languages used and nobody follows the user
 <br/>[![demo](https://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
 
 <br />
 <br />
 
+# github-API run instruction:
+To run this code, download the files and run loadPage.html or mainPage.html in web browser
