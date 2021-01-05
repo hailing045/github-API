@@ -69,4 +69,4 @@ https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EpLVqUGLerE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/watch?v=EpLVqUGLerE)
+[![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
