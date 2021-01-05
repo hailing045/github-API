@@ -61,30 +61,17 @@ The third part is a diagram that commits frequency related to the hour in the da
 # github-API full demo:
 here are three demos, with different typical usage users, please click on the link to view
 <br />
-https://github.com/hailing045/github-API/blob/main/pics/demoL.mov
+
+<br/>[![demo](https://img.youtube.com/vi/p6hNCY9pdS8/0.jpg)](https://www.youtube.com/embed/p6hNCY9pdS8)
+
+
 <br /><br />
-https://github.com/hailing045/github-API/blob/main/pics/demoM.mov
+
+<br/>[![demo](https://img.youtube.com/vi/ItdnHAoi0Y4/0.jpg)](https://www.youtube.com/embed/ItdnHAoi0Y4)
+
 <br /><br />
-https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EpLVqUGLerE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-
-
+<br/>[![demo](https://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
 
 <br />
 <br />
-
-<br/>
-
-[![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
-
-
-<br />
-<br />
-
-<br/>[![demo](https://img.youtube.com/vi/EpLVqUGLerE-Y/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
 
