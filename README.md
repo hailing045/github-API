@@ -1,10 +1,5 @@
 # github-API
 
-
-[![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
-
-
-
 Github accessing part <br />
 Interrogate the GitHub API to retrieve and display data regarding the logged in developer.<br />
 From code access.py, i retrieve and display my own repo data which contains all my repositories and related last commit id. 
@@ -80,7 +75,16 @@ https://github.com/hailing045/github-API/blob/main/pics/demoS.mov
 
 
 
+<br />
+<br />
 
 <br/>
 
 [![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/embed/EpLVqUGLerE)
+
+
+<br />
+<br />
+
+<br/>
+[![demoS] (http://img.youtube.com/vi/EpLVqUGLerE/0.jpg)](https://www.youtube.com/playlist?list=PLBj_jtt2_jb1N9sK5cWSD9-ew3zX3aTw3)
